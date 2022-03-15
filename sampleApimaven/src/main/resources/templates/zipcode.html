@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>住所検索</title>
+</head>
+<body>
+	<form method="post" th:action="@{/zipcode/confirm}">
+		郵便番号：<input type="text" name="zipcode" value="" size="30"><br>
+		<input type="submit" value="送信">
+		<th:block th:text="${errormessage}"></th:block>
+	</form>
+</body>
+</html>
